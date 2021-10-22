@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 
 start=`date +%s`
 
@@ -11,7 +11,7 @@ sudo apt-get -y dist-upgrade
 echo "installing Python 3.x extensions ..."
 sudo apt-get -y install gcc binutils
 sudo apt-get -y install software-properties-common
-sudo apt-get -y install python3-dev python3-pip python3-setuptools
+sudo apt-get -y install python3-dev python3-pip python3-setuptools python3-testresources
 sudo apt-get -y install build-essential
 sudo -H pip3 install --upgrade pip
 hash -d pip3
@@ -37,8 +37,8 @@ sudo apt-get update -y
 sudo apt-get install -y postgresql postgresql-contrib python3-psycopg2 libpq-dev
 
 # install screen
-echo "installing Screen ..."
-sudo apt-get install -y screen
+echo "installing Screen & Byobu..."
+sudo apt-get install -y screen byobu
 
 # install pip packages for jesse
 echo "installing jesse ..."
@@ -60,8 +60,5 @@ echo "Here's the output of 'python --version' (it should be 'Python 3.x.x'):"
 python --version
 echo "Here's the output of 'pip --version':"
 pip --version
-
-# install Oh My Zsh
-echo "installing Oh My Zsh"
-sudo apt-get install -y git zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "Here's the output of 'jesse --version':"
+jesse --version
