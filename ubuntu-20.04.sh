@@ -5,7 +5,6 @@ start=`date +%s`
 echo "updating ubuntu ..."
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
 
 # python 3.x extensions
 echo "installing Python 3.x extensions ..."
