@@ -49,6 +49,11 @@ echo "alias python=python3" >> ~/.profile
 echo "alias pip=pip3" >> ~/.profile
 . ~/.profile
 
+# Create jesse_db, user and grant privileges
+sudo -u postgres psql -c "CREATE DATABASE jesse_db;"
+sudo -u postgres psql -c "CREATE USER jesse_user WITH PASSWORD 'password';"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE jesse_db to jesse_user;"
+
 echo "cleaning..."
 rm ta-lib-0.4.0-src.tar.gz && rm -rf ta-lib
 echo "Finished installation. "
