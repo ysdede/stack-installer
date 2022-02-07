@@ -29,7 +29,7 @@ sudo make install
 
 # install pip packages for jesse
 echo "installing jesse ..."
-pip install -r https://raw.githubusercontent.com/ysdede/jesse/master/requirements.txt
+pip install -r https://raw.githubusercontent.com/ysdede/jesse/cache%2Byakirsim/requirements.txt
 pip install -e git+https://github.com/ysdede/jesse.git@cache+yakirsim#egg=jesse
 
 # point python to python3
