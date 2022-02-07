@@ -12,11 +12,11 @@ sudo apt-get -y install gcc binutils
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install python3-dev python3-pip python3-setuptools python3-testresources python-is-python3
 sudo apt-get -y install build-essential
-sudo -H pip3 install --upgrade pip
-hash -d pip3
-pip3 install --upgrade setuptools
-pip3 install ez_setup
-pip3 install Cython numpy
+sudo -H pip install --upgrade pip
+hash -d pip
+pip install --upgrade setuptools wheel
+pip install ez_setup
+pip install Cython numpy
 
 # talib
 echo "installing talib ... (you should have more then 1Gb free of ram)"
@@ -30,8 +30,8 @@ sudo make install
 
 # install pip packages for jesse
 echo "installing jesse ..."
-pip3 install -r https://raw.githubusercontent.com/ysdede/jesse/master/requirements.txt
-pip3 install -e git+https://github.com/ysdede/jesse.git#egg=jesse
+pip install -r https://raw.githubusercontent.com/ysdede/jesse/master/requirements.txt
+pip install -e git+https://github.com/ysdede/jesse.git#egg=jesse
 
 # point python to python3
 echo "alias python=python3" >> ~/.profile
