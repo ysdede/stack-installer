@@ -12,8 +12,7 @@ sudo apt-get -y install software-properties-common
 sudo apt-get -y install python3-dev python3-pip python3-setuptools python3-testresources python-is-python3
 sudo apt-get -y install build-essential
 sudo apt-get install byobu
-sudo -H pip install --upgrade pip
-hash -d pip
+
 pip install --upgrade setuptools wheel
 pip install ez_setup
 pip install Cython numpy
