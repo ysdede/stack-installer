@@ -33,12 +33,12 @@ pip install -r https://raw.githubusercontent.com/ysdede/jesse/cache%2Byakirsim/r
 pip install -e git+https://github.com/ysdede/jesse.git@cache+yakirsim#egg=jesse -v
 
 # point python to python3
-echo "alias python=python3" >> ~/.profile
-echo "alias pip=pip3" >> ~/.profile
-. ~/.profile
+# echo "alias python=python3" >> ~/.profile
+# echo "alias pip=pip3" >> ~/.profile
+# . ~/.profile
 
 echo "cleaning..."
-rm ta-lib-0.4.0-src.tar.gz && rm -rf ta-lib
+rm ta-lib-0.4.0-src.tar.gz #  && rm -rf ta-lib
 echo "Finished installation. "
 end=`date +%s`
 runtime=$((end-start))
