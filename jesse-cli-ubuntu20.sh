@@ -4,7 +4,6 @@ start=`date +%s`
 
 echo "updating ubuntu ..."
 sudo apt-get -y update
-sudo apt-get -y upgrade
 
 # python 3.x extensions
 echo "installing Python 3.x extensions ..."
@@ -12,6 +11,7 @@ sudo apt-get -y install gcc binutils
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install python3-dev python3-pip python3-setuptools python3-testresources python-is-python3
 sudo apt-get -y install build-essential
+sudo apt-get install byobu
 sudo -H pip install --upgrade pip
 hash -d pip
 pip install --upgrade setuptools wheel
