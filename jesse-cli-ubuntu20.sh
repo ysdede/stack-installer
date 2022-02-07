@@ -29,8 +29,8 @@ sudo make install
 
 # install pip packages for jesse
 echo "installing jesse ..."
-pip install -r https://raw.githubusercontent.com/ysdede/jesse/cache%2Byakirsim/requirements.txt
-pip install -e git+https://github.com/ysdede/jesse.git@cache+yakirsim#egg=jesse
+pip install -r https://raw.githubusercontent.com/ysdede/jesse/cache%2Byakirsim/requirements.txt -v
+pip install -e git+https://github.com/ysdede/jesse.git@cache+yakirsim#egg=jesse -v
 
 # point python to python3
 echo "alias python=python3" >> ~/.profile
@@ -49,3 +49,5 @@ echo "Here's the output of 'pip --version':"
 pip --version
 echo "Here's the output of 'jesse --version':"
 jesse --version
+echo "Here's the output of 'jesse-tk --help':"
+jesse-tk --help
