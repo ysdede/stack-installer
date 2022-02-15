@@ -50,7 +50,3 @@ echo "Here's the output of 'python --version' (it should be 'Python 3.x.x'):"
 python --version
 echo "Here's the output of 'pip --version':"
 pip --version
-echo "Here's the output of 'jesse --version':"
-jesse --version
-echo "Here's the output of 'jesse-tk --help':"
-jesse-tk --help
